@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+
+.top{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(/pictures/pexels-pixabay-257699.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.select{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    color: white;
+    background: rgb(10, 166, 238);
+}
+
+.profile{
+    height: 65%;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post .post-item {
+    height: fit-content;
+    width: 50vw;
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(204, 203, 203);
+    cursor: pointer;
+
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    grid-template-areas: 
+         'image para'
+         'image para'
+         'image reaction';
+}
+
+.post .post-item img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+    grid-area: image;
+}
+
+.post .post-item p{
+    grid-area: para;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.post .post-item .postReaction{
+    display: flex;
+    gap: 50px;
+    grid-area: reaction;
+}
+
+.comment {
+    margin-top: 20px;
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.comment div {
+    padding: 10px;
+    
+}
+
+.comment div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.postComment{
+    display: flex;
+    flex-direction: row;
+    background: rgb(233, 233, 233);
+
+}
+
+.bottom{
+    margin-top: 80px;
+    background: rgb(245, 245, 245);
+}
+
+.profileArea{
+    margin-bottom: 80px;
+    font-size: 20px;
+    
+}
+
+.pics{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-template-areas: 
+        'image h4'
+        'image para'
+        'image post';
+    box-shadow: 5px 5px 5px rgb(204, 203, 203);
+}
+.pics img{
+    grid-area: image;
+}
+.pics h4{
+    grid-area: h4;
+    font-size: 20px;
+}
+.pics p{
+    grid-area: para;
+    font-size: 15px;
+}
+.pics .postReaction{
+    grid-area: post;
+    display: flex;
+    gap: 50px;
+}
+
+select{
+    width: 15%;
+    height: 90%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
